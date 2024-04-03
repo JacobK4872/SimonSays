@@ -15,26 +15,34 @@
             return randomCommand;
         }
 
-        
-
         function displaySimonCommand() {
             let command = simonCommands();
+
+            // document.getElementById("simon_command").innerHTML = "Simon command: " + command;
             document.getElementById("simon_command").innerHTML = command;
+            
         }
 
         function userInput() {
             let input = prompt("What is Simon's Command?");
-            document.getElementById("input").innerHTML = input;
+            // TODO: Possibly change this/change to its own thing
+
+            // document.getElementById("input").innerHTML = "User Input: " + input;
+            document.getElementById("input").innerHTML =  input;
+            
             console.log(input);
             return input;
         }
 
-        // function displayUserInput(userInput) {
-        //     let userInput = userInput()
-           
-        // }
-
+        function compareSimonAndUser() {
+            if (document.getElementById("input").innerHTML === document.getElementById("simon_command").innerHTML) {
+                alert("That is correct");
+            } else {
+                alert("That is not correct");
+            }
+        }
         
+        //TODO: Main fuction/app
        
 
 
@@ -44,6 +52,8 @@
 
         <button onclick="displaySimonCommand()"> Simon command</button>
         <button onclick="userInput()">user input</button>
+        <button onclick="compareSimonAndUser()">user input</button>
+
         
         <div id="simon_command"></div>
         <div id="input"></div>
