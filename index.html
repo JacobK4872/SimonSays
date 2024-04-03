@@ -22,25 +22,34 @@
             document.getElementById("simon_command").innerHTML = command;
         }
 
-        // function displayAnswer(answer) {
-        //     document.getElementById("answer").innerHTML = answer;
+        function userInput() {
+            let input = prompt("What is Simon's Command?");
+            document.getElementById("input").innerHTML = input;
+            console.log(input);
+            return input;
+        }
+
+        // function displayUserInput(userInput) {
+        //     let userInput = userInput()
+           
         // }
 
-        // function askQuestionButton() {
-        //     let question = document.getElementById("question").value;
-        //     let answer = askQuestion(question);
-        //     displayAnswer(answer);
-        // }
+        
+       
 
 
     </script>
     
-        <!-- <input type="text" id="question" placeholder="Enter your question here..."> -->
+        <!-- <input type="text" id="question" placeholder="Enter command here..."> -->
 
         <button onclick="displaySimonCommand()"> Simon command</button>
-
+        <button onclick="userInput()">user input</button>
+        
         <div id="simon_command"></div>
-
+        <div id="input"></div>
+        
+        
+        
 </body>
 
 </html>
