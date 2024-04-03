@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simon Says</title>
+</head>
+
+<body>
+    <script>
+
+        function simon() {
+            let simonCommands = ['Red', 'Blue', 'Orange', 'Green'];
+            let randomCommand = simonCommands[Math.floor(Math.random() * simonCommands.length)];
+            console.log(randomCommand);
+            return randomCommand;
+        }
+
+
+
+        // function askQuestion(question) {
+        //     let answer = prompt(question);
+        //     return answer;
+        // }
+
+        // function displayAnswer(answer) {
+        //     document.getElementById("answer").innerHTML = answer;
+        // }
+
+        // function askQuestionButton() {
+        //     let question = document.getElementById("question").value;
+        //     let answer = askQuestion(question);
+        //     displayAnswer(answer);
+        // }
+
+
+    </script>
+    
+        <!-- <input type="text" id="question" placeholder="Enter your question here..."> -->
+
+        <button onclick="simon()"> Simon command</button>
+
+        <!-- <div id="answer"></div> -->
+
+</body>
+
+</html>
