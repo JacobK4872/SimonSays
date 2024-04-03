@@ -20,7 +20,7 @@
 
             // document.getElementById("simon_command").innerHTML = "Simon command: " + command;
             document.getElementById("simon_command").innerHTML = command;
-            
+
         }
 
         function userInput() {
@@ -28,9 +28,10 @@
             // TODO: Possibly change this/change to its own thing
 
             // document.getElementById("input").innerHTML = "User Input: " + input;
-            document.getElementById("input").innerHTML =  input;
-            
+            document.getElementById("input").innerHTML = input;
+
             console.log(input);
+            compareSimonAndUser();
             return input;
         }
 
@@ -41,25 +42,25 @@
                 alert("That is not correct");
             }
         }
-        
+
         //TODO: Main fuction/app
-       
+
 
 
     </script>
-    
-        <!-- <input type="text" id="question" placeholder="Enter command here..."> -->
 
-        <button onclick="displaySimonCommand()"> Simon command</button>
-        <button onclick="userInput()">user input</button>
-        <button onclick="compareSimonAndUser()">user input</button>
+    <!-- <input type="text" id="question" placeholder="Enter command here..."> -->
 
-        
-        <div id="simon_command"></div>
-        <div id="input"></div>
-        
-        
-        
+    <button onclick="displaySimonCommand()"> Simon command</button>
+    <button onclick="userInput()">user input</button>
+    <button onclick="compareSimonAndUser()">Test: Compare</button>
+
+
+    <div id="simon_command"></div>
+    <div id="input"></div>
+
+
+
 </body>
 
 </html>
