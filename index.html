@@ -8,19 +8,19 @@
 <body>
     <script>
 
-        function simon() {
+        function simonCommands() {
             let simonCommands = ['Red', 'Blue', 'Orange', 'Green'];
             let randomCommand = simonCommands[Math.floor(Math.random() * simonCommands.length)];
             console.log(randomCommand);
             return randomCommand;
         }
 
+        
 
-
-        // function askQuestion(question) {
-        //     let answer = prompt(question);
-        //     return answer;
-        // }
+        function displaySimonCommand() {
+            let command = simonCommands();
+            document.getElementById("simon_command").innerHTML = command;
+        }
 
         // function displayAnswer(answer) {
         //     document.getElementById("answer").innerHTML = answer;
@@ -37,9 +37,9 @@
     
         <!-- <input type="text" id="question" placeholder="Enter your question here..."> -->
 
-        <button onclick="simon()"> Simon command</button>
+        <button onclick="displaySimonCommand()"> Simon command</button>
 
-        <!-- <div id="answer"></div> -->
+        <div id="simon_command"></div>
 
 </body>
 
